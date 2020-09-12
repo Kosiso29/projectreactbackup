@@ -2,7 +2,7 @@
     background: linear-gradient(180deg, #56CCF2 0%, rgba(47, 128, 237, 0) 100%), #2680C2;
     height: 80px;
     display: flex;
-    justify-content: start;
+    justify-content: flexstart;
     align-items: center;
 }
 
@@ -89,7 +89,7 @@
 .dot{
     width: 20px;
     height: 20px;
-    background-image: url("../img/Ellipse1.png");    
+    /* background-image: url("../img/Ellipse1.png");     */
     border-style: none;
 }
 span{

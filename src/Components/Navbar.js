@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 //import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons/io';
-import Ellipse1 from '../img/Ellipse1.png';
+//import Ellipse1 from '../assets/img/Ellipse1.png';
 
 function Navbar() {
 
@@ -60,28 +60,28 @@ function Navbar() {
                         <li className='nav-text'>
                             <Link to='/' className={sidebar.bgColor1} onClick={showSidebar1}>
                                 {/* {item.icon} */}
-                                <img src={Ellipse1} />
+                                <img src={process.env.PUBLIC_URL + "/assets/img/Ellipse1.png"} />
                                 <span>Home</span>
                             </Link>
                         </li>
                         <li className='nav-text'>
                             <Link to='/patients' className={sidebar.bgColor2} onClick={showSidebar2}>
                                 {/* {item.icon} */}
-                                <img src={Ellipse1} />
+                                <img src={process.env.PUBLIC_URL + "/assets/img/Ellipse1.png"} />
                                 <span>Patients</span>
                             </Link>
                         </li>
                         <li className='nav-text'>
                             <Link to='/staff' className={sidebar.bgColor3} onClick={showSidebar3}>
                                 {/* {item.icon} */}
-                                <img src={Ellipse1} />
+                                <img src={process.env.PUBLIC_URL + "/assets/img/Ellipse1.png"} />
                                 <span>Staff</span>
                             </Link>
                         </li>
                         <li className='nav-text'>
                             <Link to='/pharmacy' className={sidebar.bgColor4} onClick={showSidebar4}>
                                 {/* {item.icon} */}
-                                <img src={Ellipse1} />
+                                <img src={process.env.PUBLIC_URL + "/assets/img/Ellipse1.png"} />
                                 <span>Pharmarcy</span>
                             </Link>
                         </li>
