@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './Pages/Home';
+import Dashboard from './Pages/Dashboard';
 import Products from './Pages/Products';
 import Reports from './Pages/Reports';
 import Pharmacy from './Pages/Pharmacy';
@@ -29,7 +29,7 @@ function App() {
             <Pharmacy />
           </Route>
           <Route exact path="">
-            <Home />
+            <Dashboard />
           </Route>
         </Switch>
       </Router>

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactCalendar from '../Components/Calender';
 
-function Home() {
+function Dashboard() {
     return(
         <>
             <div>
-                <div className='home'>
+                <div className='dashboard'>
                     <div className='cardCalender'>
                         <ReactCalendar />
                     </div>
@@ -36,11 +36,11 @@ function Home() {
                     {/* <div className='cardStat'>
                         Calender
                     </div> */}
-                    {/* <h1>Home</h1> */}
+                    {/* <h1>Dashboard</h1> */}
                 </div>
             </div>
         </>
     );
 }
 
-export default Home;
+export default Dashboard;
