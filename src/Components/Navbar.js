@@ -58,7 +58,7 @@ function Navbar() {
                             </Link> */}
                         </li>
                         <li className='nav-text'>
-                            <Link to='/' className={sidebar.bgColor1} onClick={showSidebar1}>
+                            <Link to='/projectreact' className={sidebar.bgColor1} onClick={showSidebar1}>
                                 {/* {item.icon} */}
                                 <img src={process.env.PUBLIC_URL + "/assets/img/dashboard.png"} width='25' />
                                 <span>Dashboard</span>

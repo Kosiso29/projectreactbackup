@@ -3,8 +3,8 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Dashboard from './Pages/Dashboard';
-import Products from './Pages/Products';
-import Reports from './Pages/Reports';
+import Patients from './Pages/Patients';
+import Staff from './Pages/Staff';
 import Pharmacy from './Pages/Pharmacy';
 
 function App() {
@@ -20,15 +20,15 @@ function App() {
           <Route path='/pharmacy' exact component={Pharmacy} /> */}
           
           <Route path="/patients" exact>
-            <Products />
+            <Patients />
           </Route>
           <Route path="/staff" exact>
-            <Reports />
+            <Staff />
           </Route>
           <Route path="/pharmacy" exact>
             <Pharmacy />
           </Route>
-          <Route exact path="">
+          <Route exact path="/projectreact">
             <Dashboard />
           </Route>
         </Switch>
