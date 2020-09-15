@@ -58,7 +58,7 @@ function Navbar() {
                             </Link> */}
                         </li>
                         <li className='nav-text'>
-                            <Link to='/projectreact' className={sidebar.bgColor1} onClick={showSidebar1}>
+                            <Link to='/dashboard' className={sidebar.bgColor1} onClick={showSidebar1}>
                                 {/* {item.icon} */}
                                 <img src={process.env.PUBLIC_URL + "/assets/img/dashboard.png"} width='25' />
                                 <span>Dashboard</span>
@@ -83,6 +83,14 @@ function Navbar() {
                                 {/* {item.icon} */}
                                 <img src={process.env.PUBLIC_URL + "/assets/img/pharmacy.png"} width='25' />
                                 <span>Pharmarcy</span>
+                            </Link>
+                        </li>
+                        <br></br>
+                        <li className='nav-text'>
+                            <Link to='/projectreact' onClick={showSidebar4}>
+                                {/* {item.icon} */}
+                                <img src={process.env.PUBLIC_URL + "/assets/img/logout.png"} width='25' />
+                                <span>Log Out</span>
                             </Link>
                         </li>
                         {/* {SidebarData.map((item, index) => {
