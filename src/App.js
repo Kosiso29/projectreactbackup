@@ -6,7 +6,7 @@ import Dashboard from './Pages/Dashboard';
 import Patients from './Pages/Patients';
 import Staff from './Pages/Staff';
 import Pharmacy from './Pages/Pharmacy';
-import Signup from './Pages/Signup';
+import Signup from './Pages/Signin';
 
 function App() {
 
