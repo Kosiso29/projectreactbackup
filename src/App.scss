@@ -97,6 +97,7 @@ body{
     grid-column: 1/5;
     padding: 17px;
     font-size: 20px;
+    padding: 50px;
 }
 .buttonPatients{
     height: 50px;
@@ -130,7 +131,7 @@ body{
 .search-box{
     height: 40px;
     border-radius: 40px;
-    padding: 10px;
+    //padding: 10px;
     margin-bottom: 40px;
 }
 .search-btn{
@@ -140,7 +141,8 @@ body{
 .search-txt{
     border: none;
     outline: none;
-    padding: 0 15px;
+    //padding: 0 15px;
+    margin-left: 47px;
     font-size: 16px;
     line-height: 40px;
     width: 45%;
@@ -152,4 +154,9 @@ body{
     background-size: 25px 25px;
     background-position-x: 50px;
     background-position-y: center;
+}
+
+@media only screen and (max-width: 900px) {
+  /* Style adjustments for non responsive websites */
+  body{width:940px;}
 }

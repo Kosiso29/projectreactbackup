@@ -1,7 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Patients() {
+    const[API, setAPI] = useState({
+        items: [],
+        isLoaded: false
+    });
+
+    const componentDidMount = () => {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(res => res.json())
+            .then(json => {
+                setAPI({
+                    isLoaded: true,
+                    items:json
+                })
+            })
+    };
+
+    componentDidMount();
+
+    var { isLoaded, items } = API;
+
+    // if (!isLoaded) {
+    //     return <div>Loading...</div>
+    // }
+
     return(
         <>
                 <div className='search-box'>
@@ -31,6 +55,13 @@ function Patients() {
                     </div>
                     <div className='cardBottomPatients'>
                         <h4>Patient list</h4><p></p>
+                        <ul>
+                            {items.map(item => (
+                                <li key={item.id}>
+                                    Name: {item.FirstName} | Email: {item.Email}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                     {/* <div className='cardStat'>
                         Calender
